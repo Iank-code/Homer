@@ -24,6 +24,27 @@
   </head>
 
   <body>
+    <header class="w-full fixed top-0 left-0 bg-white/90 backdrop-blur-sm z-50 border-b">
+      <div class="container mx-auto px-5 py-3 flex items-center justify-between">
+        <a href="<%= root_path %>" class="flex items-center gap-3 text-lg font-bold text-slate-800">
+          <span class="inline-block w-8 h-8 rounded-full bg-gradient-to-r from-indigo-600 to-teal-400 text-white flex items-center justify-center">H</span>
+          <span>Homer</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+          <a href="#listings" class="hover:text-slate-900">Listings</a>
+          <a href="#pricing" class="hover:text-slate-900">Pricing</a>
+          <a href="#faq" class="hover:text-slate-900">FAQ</a>
+        </nav>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#" class="px-4 py-2 rounded-md border border-slate-200 text-slate-700">Sign in</a>
+          <a href="#contact" class="px-4 py-2 rounded-md bg-indigo-600 text-white">Get Started</a>
+        </div>
+        <div class="md:hidden">
+          <a href="#contact" class="px-3 py-2 rounded-md text-sm bg-indigo-600 text-white">Get Started</a>
+        </div>
+      </div>
+    </header>
+
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>

@@ -1,0 +1,170 @@
+<% content_for :title do %>
+  Homer — Find & Rent Properties Across Africa
+<% end %>
+
+<% content_for :head do %>
+  <style>
+    /* Small visual tweaks for the landing page */
+    .accent-gradient { background: linear-gradient(90deg,#7c3aed 0%,#06b6d4 100%); }
+    .card-glow { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); backdrop-filter: blur(6px); }
+  </style>
+<% end %>
+
+<div class="w-full">
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-12">
+    <div class="lg:pr-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Homer — Discover, Tour, and Rent Beautiful Spaces in Africa</h1>
+      <p class="mt-6 text-lg text-slate-600">Search curated listings, request guided tours, and rent with confidence — all in one modern platform built for Africa's growing market.</p>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-4">
+        <a href="#listings" class="inline-flex items-center justify-center px-6 py-3 rounded-md text-white font-semibold accent-gradient shadow-lg hover:opacity-95">Browse Listings</a>
+        <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 rounded-md border border-slate-200 text-slate-700 bg-white/60 hover:bg-white">Get Early Access</a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-3 gap-4 text-center">
+        <div>
+          <div class="text-2xl font-bold">10k+</div>
+          <div class="text-sm text-slate-500">Listings</div>
+        </div>
+        <div>
+          <div class="text-2xl font-bold">4.9★</div>
+          <div class="text-sm text-slate-500">Avg. satisfaction</div>
+        </div>
+        <div>
+          <div class="text-2xl font-bold">20+</div>
+          <div class="text-sm text-slate-500">Cities covered</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center lg:justify-end">
+      <div class="w-full max-w-md card-glow rounded-2xl p-6 shadow-2xl">
+        <div class="bg-white rounded-xl overflow-hidden">
+          <div class="w-full h-56 bg-gradient-to-r from-indigo-200 to-teal-100 flex items-center justify-center">
+            <svg width="260" height="140" viewBox="0 0 260 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="max-w-full max-h-full">
+              <rect width="260" height="140" rx="12" fill="white"/>
+              <g transform="translate(18,18)">
+                <rect x="0" y="36" width="160" height="76" rx="8" fill="#f8fafc" stroke="#e6eef6"/>
+                <rect x="8" y="44" width="56" height="28" rx="4" fill="#eef2ff"/>
+                <rect x="72" y="44" width="72" height="28" rx="4" fill="#ecfeff"/>
+                <path d="M80 0 L160 36 H0 L80 0 Z" fill="#7c3aed" opacity="0.12"/>
+                <rect x="120" y="16" width="40" height="24" rx="4" fill="#a78bfa"/>
+              </g>
+            </svg>
+          </div>
+          <div class="p-4">
+            <div class="flex items-start justify-between">
+              <div>
+                <div class="text-lg font-semibold">Sunny 2BR Apartment</div>
+                <div class="text-sm text-slate-500">Victoria Island, Lagos</div>
+              </div>
+              <div class="text-lg font-bold text-indigo-600">$450/mo</div>
+            </div>
+            <div class="mt-4 text-sm text-slate-600">Schedule a tour and see it in person — instant booking requests and secure paperwork.</div>
+            <div class="mt-4 flex gap-2">
+              <a href="#" class="flex-1 px-3 py-2 text-sm text-white bg-indigo-600 rounded-md text-center">Request Tour</a>
+              <a href="#" class="px-3 py-2 text-sm border rounded-md text-slate-700">Save</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="listings" class="py-12">
+    <h2 class="text-2xl font-bold">How it works</h2>
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-lg border border-slate-100">
+        <div class="text-3xl">🔎</div>
+        <h3 class="mt-4 font-semibold">Search Smart</h3>
+        <p class="mt-2 text-sm text-slate-600">Filter by price, neighbourhood, amenities and verified listings.</p>
+      </div>
+      <div class="p-6 rounded-lg border border-slate-100">
+        <div class="text-3xl">📅</div>
+        <h3 class="mt-4 font-semibold">Request a Tour</h3>
+        <p class="mt-2 text-sm text-slate-600">Choose a time that suits you — in-person or virtual tours available.</p>
+      </div>
+      <div class="p-6 rounded-lg border border-slate-100">
+        <div class="text-3xl">📝</div>
+        <h3 class="mt-4 font-semibold">Secure Lease</h3>
+        <p class="mt-2 text-sm text-slate-600">Complete rent agreements and payments with trusted partners.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-12">
+    <div class="bg-slate-50 p-8 rounded-xl grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <div>
+        <h3 class="text-xl font-bold">Want early access?</h3>
+        <p class="mt-2 text-sm text-slate-600">Join the waiting list and be the first to try Homer in your city.</p>
+      </div>
+      <form action="#" class="flex gap-3">
+        <input placeholder="Email address" class="flex-1 px-4 py-3 rounded-md border border-slate-200" />
+        <button class="px-4 py-3 rounded-md bg-indigo-600 text-white font-semibold">Join</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-12">
+    <h2 class="text-2xl font-bold">Trusted by users across Africa</h2>
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-lg border border-slate-100 bg-white">
+        <div class="text-lg font-semibold">"Found my dream apartment in 3 days"</div>
+        <div class="mt-3 text-sm text-slate-600">Aisha, Nairobi</div>
+      </div>
+      <div class="p-6 rounded-lg border border-slate-100 bg-white">
+        <div class="text-lg font-semibold">"Tours were simple and well coordinated"</div>
+        <div class="mt-3 text-sm text-slate-600">Tunde, Lagos</div>
+      </div>
+      <div class="p-6 rounded-lg border border-slate-100 bg-white">
+        <div class="text-lg font-semibold">"Transparent pricing and paperwork"</div>
+        <div class="mt-3 text-sm text-slate-600">Nadia, Accra</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-12">
+    <h2 class="text-2xl font-bold">Plans for teams and individuals</h2>
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-lg border border-slate-100">
+        <div class="text-xl font-bold">Starter</div>
+        <div class="mt-2 text-3xl font-extrabold">Free</div>
+        <p class="mt-3 text-sm text-slate-600">Browse listings and request tours.</p>
+      </div>
+      <div class="p-6 rounded-lg border border-indigo-600 bg-indigo-50">
+        <div class="text-xl font-bold">Pro</div>
+        <div class="mt-2 text-3xl font-extrabold">$29/mo</div>
+        <p class="mt-3 text-sm text-slate-600">Priority support, featured listing placement.</p>
+      </div>
+      <div class="p-6 rounded-lg border border-slate-100">
+        <div class="text-xl font-bold">Enterprise</div>
+        <div class="mt-2 text-3xl font-extrabold">Custom</div>
+        <p class="mt-3 text-sm text-slate-600">Dedicated account manager and integrations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-12">
+    <h2 class="text-2xl font-bold">FAQ</h2>
+    <div class="mt-6 space-y-4">
+      <details class="p-4 border rounded-lg">
+        <summary class="font-semibold">Are listings verified?</summary>
+        <div class="mt-2 text-sm text-slate-600">We verify listings and hosts where possible, and provide reporting tools for users.</div>
+      </details>
+      <details class="p-4 border rounded-lg">
+        <summary class="font-semibold">How do tours work?</summary>
+        <div class="mt-2 text-sm text-slate-600">Choose in-person or virtual tours; schedule directly with the host through the app.</div>
+      </details>
+    </div>
+  </section>
+
+  <footer class="py-8 text-sm text-slate-500">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+      <div>© <%= Time.current.year %> Homer. All rights reserved.</div>
+      <div class="flex gap-4">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+</div>
